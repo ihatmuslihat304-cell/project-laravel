@@ -3,18 +3,25 @@
         <div class="flex items-center gap-8">
             <span class="font-bold text-lg text-blue-600 tracking-wide">SIPADU</span>
             <div class="flex gap-5 text-sm font-medium">
-                {{-- menu report --}}
+                {{-- menu rekap laporan --}}
                 <a href="{{ route('reports.index') }}"
                     class="{{ request()->routeIs('reports.index')?
                     'text-blue-500 border-b-2 border-blue-500 pb-1':
                     'text-grey-500 hover:text-blue-500'}}
                     flex items-center gap-1">
-                    <span class="material-icons text-base">inventory_2</span>
+                    <span class="material-icons text-base">summarize</span>
+                    Rekap Laporan
+                </a>
+
+                {{-- menu filer laporan --}}
+                <a href="#" class="text-grey-500 hover:text-blue-500 flex items-center gap-1 transition">
+                    <span class="material-icons text-base ">filter_list</span>
                     Filter Laporan
                 </a>
+
                 {{-- menu grafik --}}
                 <a href="#" class="text-grey-500 hover:text-blue-500 flex items-center gap-1 transition">
-                    <span class="material-icons text-base ">receipt_long</span>
+                    <span class="material-icons text-base ">bar_chart</span>
                     Grafik Pengajuan Perbulan
                 </a>
             </div>
